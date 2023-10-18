@@ -1,17 +1,17 @@
 <html>
 <body>
 <?php 
-	$number1 = $_GET["number1"];
-	$number2 = $_GET["number2"];
+	$number1 = $_GET["num1"];
+	$number2 = $_GET["num2"];
 	$result = 0;
 	$operation = "";
 	if (isset($_GET["add"])) { 
 		$result = $number1 + $number2;
 		$operation = "Addition";
-	} elseif(isset($_GET["subtract"])) {
+	} elseif(isset($_GET["sub"])) {
 		$result = $number1 - $number2;
 		$operation = "Subtraction";
-	} elseif(isset($_GET["multiply"])) {
+	} elseif(isset($_GET["mul"])) {
 		$result = $number1 * $number2;
 		$operation = "Multiplication";
 	} else {
